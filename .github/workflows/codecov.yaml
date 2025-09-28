@@ -1,4 +1,4 @@
-name: Jest Coverage
+name: TestThat Codecov Coverage
 
 on:
   push:
