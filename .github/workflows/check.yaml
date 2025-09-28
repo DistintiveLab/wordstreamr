@@ -53,5 +53,5 @@ jobs:
           build_args: 'c("--no-manual","--compact-vignettes=gs+qpdf")'
 
       - uses: codecov/codecov-action@v5
-      with:
+        with:
           token: ${{ secrets.CODECOV_TOKEN }}
