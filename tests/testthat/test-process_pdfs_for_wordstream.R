@@ -26,7 +26,7 @@ test_that("process_pdfs_for_wordstream funciona corretamente e lida com LLM", {
   )
   # Criar um PDF de teste com metadados de data
   pdf_path1 <- file.path(temp_pdf_dir, "doc1.pdf")
-  pdf(pdf_path1, title = "Documento 1", author = "Teste")
+  pdf(pdf_path1, title = "Documento 1")
   plot.new()
   text(0.5, 0.5, "Este é o primeiro documento para análise. Análise de dados é importante.")
   text(0.5,0.2,pdf1_content)
