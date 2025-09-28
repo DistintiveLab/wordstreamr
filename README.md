@@ -6,7 +6,7 @@
 <!-- badges: start -->
 
 [![CRAN
-status](https://www.r-pkg.org/badges/version/sidra)](https://CRAN.R-project.org/package=wordstreamr)
+status](https://www.r-pkg.org/badges/version/wordstreamr)](https://CRAN.R-project.org/package=wordstreamr)
 [![check](https://github.com/distintivelab/wordstreamr/actions/workflows/check.yaml/badge.svg)](https://github.com/distintivelab/wordstreamr/actions/workflows/check.yaml)
 [![codecov](https://codecov.io/gh/distintivelab/wordstreamr/graph/badge.svg?token=7B3AMAQYHS)](https://app.codecov.io/gh/distintivelab/wordstreamr)
 [![Lifecycle:
@@ -31,7 +31,8 @@ stopwords. Opcionalmente, pode utilizar Modelos de Linguagem Grandes
 (LLMs) para a categorização avançada e automática dos termos
 identificados.
 
-<img src="man/figures/README-wordstream-demo-1.png" width="100%" />
+<img src="man/figures/README-wordstream_via_r_demo.png" width="100%" />
+
 *Exemplo de uma visualização WordStream gerada com o pacote.*
 
 ## Key Features

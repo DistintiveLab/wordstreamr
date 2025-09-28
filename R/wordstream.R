@@ -28,7 +28,7 @@ wordstream <- function(data, width = NULL, height = NULL,
     topWords = top_words_vis
   )
 
-  # Agrupa os dados e as configura\u00e7\u00f5es
+  # Agrupa os dados e as configurações
   x <- list(
     data = data,
     settings = settings
