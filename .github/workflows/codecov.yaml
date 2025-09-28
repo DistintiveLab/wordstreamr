@@ -1,0 +1,33 @@
+name: Jest Coverage
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test-and-coverage:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4 # Use the latest version of checkout action
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4 # Use the latest version of setup-node action
+        with:
+          node-version: '20' # Specify your desired Node.js version
+
+      - name: Install dependencies
+        run: npm ci # Or 'yarn install' if you use Yarn
+
+      - name: Run Jest tests and generate coverage report
+        run: npx jest --coverage
+
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
