@@ -1,0 +1,36 @@
+Package: wordstreamr
+Title: Creates Wordstreams from word frequency date data.frames
+Version: 0.1.0
+Authors@R: 
+    person("Rodrigo", "Borges", , "rodrigo@borges.net.br", role = c("aut", "cre"))
+Description: Create 'WordStream' visualizations as 'htmlwidgets' to 
+    illustrate the evolution of topics over time. The package provides 
+    a flexible data processing pipeline to extract and prepare text 
+    from sources like PDF files. This includes functionalities for 
+    term extraction (n-grams), stemming, and stopword filtering. 
+    Cria visualizações 'WordStream' como 'htmlwidgets' para ilustrar a 
+    evolução de tópicos ao longo do tempo. O pacote oferece um pipeline 
+    flexível de processamento de dados para extrair e preparar texto a 
+    partir de fontes como arquivos PDF. Isto inclui funcionalidades para 
+    extração de termos (n-grams), radicalização (stemming) e filtragem de 
+    stopwords.
+License: GPL (>= 3) + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Suggests: 
+    chatLLM,
+    ollamar,
+    tm,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports:
+    dplyr,
+    tidyr,
+    purrr,
+    tibble,
+    SnowballC, 
+    htmlwidgets, 
+    pdftools, 
+    stringr, 
+    tidytext

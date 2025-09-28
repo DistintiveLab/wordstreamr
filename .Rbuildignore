@@ -1,0 +1,6 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^data-raw$
+^inst/htmlwidgets/lib/wordstream-library/.git$
+^LICENSE\.md$
+^README\.Rmd$

@@ -1,0 +1,12 @@
+dependencies:
+  - name: d3
+    version: 4 # Ou a versão que você baixou
+    src: htmlwidgets/lib/wordstream-1.0.0
+    script:
+      - js/d3.v4.min.js
+  - name: wordstream
+    src: htmlwidgets/lib/wordstream-library
+    script:
+      - js/wordstream.js
+    stylesheet:
+      - styles/main.css
