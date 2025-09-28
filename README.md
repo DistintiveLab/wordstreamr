@@ -8,9 +8,11 @@
 [![CRAN
 status](https://www.r-pkg.org/badges/version/wordstreamr)](https://CRAN.R-project.org/package=wordstreamr)
 [![check](https://github.com/distintivelab/wordstreamr/actions/workflows/check.yaml/badge.svg)](https://github.com/distintivelab/wordstreamr/actions/workflows/check.yaml)
-[![codecov](https://codecov.io/gh/distintivelab/wordstreamr/graph/badge.svg?token=7B3AMAQYHS)](https://app.codecov.io/gh/distintivelab/wordstreamr)
+[![codecov](https://codecov.io/gh/DistintiveLab/wordstreamr/graph/badge.svg?token=7B3AMAQYHS)](https://app.codecov.io/gh/DistintiveLab/wordstreamr)
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![Codecov test
+coverage](https://codecov.io/gh/DistintiveLab/wordstreamr/graph/badge.svg)](https://app.codecov.io/gh/DistintiveLab/wordstreamr)
 <!-- badges: end -->
 
 `wordstreamr` provides a flexible data processing pipeline to extract
