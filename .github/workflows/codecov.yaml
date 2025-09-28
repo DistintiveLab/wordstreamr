@@ -30,7 +30,7 @@ jobs:
           needs: check
 
       - name: Generate coverage report
-        run: Rscript -e 'covr::package_coverage(type = "all", quiet = FALSE, clean = TRUE, report_type = "html", file = "coverage.xml")'
+        run: Rscript -e 'covr::report(covr::package_coverage(type = "all", quiet = FALSE, clean = TRUE), file = "coverage.xml",browse=interactive())'
 
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v5
