@@ -1,6 +1,6 @@
 Package: wordstreamr
 Title: Creates Wordstreams from word frequency date data.frames
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: 
     person("Rodrigo", "Borges", , "rodrigo@borges.net.br", role = c("aut", "cre"))
 Description: Create 'WordStream' visualizations as 'htmlwidgets' to 
@@ -20,9 +20,11 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 Suggests: 
     chatLLM,
+    mockery,
     ollamar,
     tm,
-    testthat (>= 3.0.0)
+    testthat (>= 3.0.0),
+    withr
 Config/testthat/edition: 3
 Imports:
     dplyr,

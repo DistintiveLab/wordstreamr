@@ -57,7 +57,7 @@ process_pdfs_for_wordstream <- function(folder_path,
 
   # --- 1. Extração de Texto e Datas dos PDFs ---
 
-  pdf_files <- list.files(folder_path, pattern = "\\\\.pdf$", full.names = TRUE, ignore.case = TRUE)
+  pdf_files <- list.files(folder_path, pattern = "\\.pdf$", full.names = TRUE, ignore.case = TRUE)
   if (length(pdf_files) == 0) stop("Nenhum arquivo PDF encontrado na pasta especificada.")
 
   doc_data <- tibble(file_path = pdf_files) %>%
@@ -66,8 +66,8 @@ process_pdfs_for_wordstream <- function(folder_path,
       info = map(.data$file_path, pdftools::pdf_info),
       meta_created = map(.data$info, "created"),
       file_info = map(.data$file_path, file.info),
-      file_mtime = map(.data$file_info, "mtime"),
-      date = coalesce(as.Date(.data$meta_created), as.Date(.data$file_mtime))
+      file_mtime = unlist(map(.data$file_info, "mtime")),
+      date = coalesce(as.Date.POSIXct(as.numeric(.data$meta_created)), as.Date.POSIXct(as.numeric(.data$file_mtime)))
     ) %>%
     select(.data$date, .data$text) %>%
     filter(!is.na(.data$date))
@@ -182,7 +182,7 @@ process_pdfs_for_wordstream <- function(folder_path,
         str_trim() %>%
         as_tibble_col(column_name = "raw") %>%
         filter(raw != "" & str_detect(raw, ":")) %>%
-        separate(raw, into = c("term", "category"), sep = ":\\\\s*", fill = "right") %>%
+        separate(raw, into = c("term", "category"), sep = ":\\s*", fill = "right") %>%
         mutate(category = ifelse(is.na(.data$category), "Indeterminado", str_trim(.data$category)))
 
       top_terms <- top_terms %>%

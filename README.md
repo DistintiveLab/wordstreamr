@@ -11,8 +11,6 @@ status](https://www.r-pkg.org/badges/version/wordstreamr)](https://CRAN.R-projec
 [![codecov](https://codecov.io/gh/DistintiveLab/wordstreamr/graph/badge.svg?token=7B3AMAQYHS)](https://app.codecov.io/gh/DistintiveLab/wordstreamr)
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![Codecov test
-coverage](https://codecov.io/gh/DistintiveLab/wordstreamr/graph/badge.svg)](https://app.codecov.io/gh/DistintiveLab/wordstreamr)
 <!-- badges: end -->
 
 `wordstreamr` provides a flexible data processing pipeline to extract
@@ -21,8 +19,9 @@ functionalities for term extraction (n-grams), stemming, and stopword
 filtering. Optionally, it can leverage Large Language Models (LLMs) for
 advanced, automated categorization of the identified terms.
 
-O objetivo do `wordstreamr` é criar visualizações ‘WordStream’ como
-`htmlwidgets` para ilustrar a evolução de tópicos ao longo do tempo.
+O objetivo do `wordstreamr` é criar visualizações
+[‘WordStream’](https://github.com/huyen-nguyen/maker) como `htmlwidgets`
+para ilustrar a evolução de tópicos ao longo do tempo.
 
 Cria visualizações ‘WordStream’ como ‘htmlwidgets’ para ilustrar a
 evolução de tópicos ao longo do tempo. O pacote oferece um pipeline
@@ -58,7 +57,7 @@ do [GitHub](https://github.com) com:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("seu-usuario-github/wordstreamr")
+devtools::install_github("DistintiveLab/wordstreamr")
 ```
 
 ## Workflow Básico
@@ -182,6 +181,16 @@ wordstream(
 Este fluxo de trabalho demonstra o poder do pacote para transformar
 documentos não estruturados em uma visualização interativa com poucas
 linhas de código.
+
+## Agradecimentos
+
+Agradecimentos especiais a [Huyền N. Nguyen](https://huyennguyen.com/) ,
+pela criação do app wordstream maker e do pacote javascript em
+<https://github.com/huyen-nguyen/wordstream-library>
+
+Special thanks to [Huyền N. Nguyen](https://huyennguyen.com/) , pela
+criação do app wordstream maker e do pacote javascript em
+<https://github.com/huyen-nguyen/wordstream-library>
 
 ## Licença
 
