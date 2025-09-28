@@ -4,3 +4,4 @@
 ^inst/htmlwidgets/lib/wordstream-library/.git$
 ^LICENSE\.md$
 ^README\.Rmd$
+^\.github$
